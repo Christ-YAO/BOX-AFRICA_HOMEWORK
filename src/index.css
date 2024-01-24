@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.imgFond {
+    background: url(../sunnyside-agency-landing-page-main/sunnyside-agency-landing-page-main/images/desktop/image-header.jpg) no-repeat center/cover;
+}
+
+/* @media screen and (max-width: 733px) {
+    .imgFond {
+        background: url(../sunnyside-agency-landing-page-main/sunnyside-agency-landing-page-main/images/mobile/) no-repeat center/cover;
+    }
+} */
+
+.imgFond2 {
+    background: url(../sunnyside-agency-landing-page-main/sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg) no-repeat center/cover;
+    height: 500px;
+}
+
+.btn {
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.link {
+    transition: all 0.1s ease-in-out;
+}
+
+.icon {
+    transition: all 0.1s ease-in-out;
+}
+
+.icon:hover { 
+    color: #fff;
+}
+
+.contact {
+    padding: 8px 30px !important;
+}
+
+.btn2 {
+    border-bottom: 2px solid transparent;
+}
+
+@media screen and (max-width: 768px) {
+    .btn2:hover {
+        color: #0284c7;
+        background: #bae6fd;
+        border-bottom: 2px solid transparent !important;
+    }
+
+    .contact {
+        background: #facc15 !important;
+        color: black !important;
+        margin: 30px 0 !important;
+        padding: 10px 30px !important;
+    }
+
+    .contact:hover {
+        background: #d3ad14 !important;
+    }
+
+    .navresp::after {
+        content: "";
+        display : inline-block;
+        height : 0;
+        width : 0;
+        border-bottom : 30px solid white;
+        border-left : 30px solid transparent;
+    }
+}
+
+.huddleFooter {
+    background: url('../huddle-landing-page-with-curved-sections-master/huddle-landing-page-with-curved-sections-master/images/bg-footer-top-mobile.svg') no-repeat center/120% 100%;
+}
+
+
+
+::view-transition-old(root) {
+    animation: fade-out 350ms cubic-bezier(0, 0, 0.2, 1),
+        slide-to-right 350ms cubic-bezier((0, 0, 0.2, 1));
+}
+
